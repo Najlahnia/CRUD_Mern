@@ -68,7 +68,7 @@ function App() {
     try {
       setLoading(true);
       // In a real app, use proper error handling
-      const res = await fetch("http://localhost:3001/notes");
+      const res = await fetch("https://crud-mern-3.onrender.com/notes");
       const data = await res.json();
       setNotes(data.notes || []);
       setError(null);
